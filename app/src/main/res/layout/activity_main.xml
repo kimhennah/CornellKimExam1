@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary1"
+    android:background="@android:color/holo_blue_bright"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context=".MainActivity">
@@ -12,31 +12,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="209dp"
+        android:background="@android:color/holo_blue_bright"
         android:orientation="horizontal"
-        android:padding="50dp">
+        android:padding="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="107dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/imageButton1"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:layout_weight="1"
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/NotesIconStyle"
                 app:srcCompat="@drawable/note1" />
 
             <TextView
                 android:id="@+id/textView1"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Personal Notes"
-                android:textSize="10sp" />
+                style="@style/NotesStyle"
+                android:text="Personal Notes" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,20 +41,15 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:layout_weight="1"
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/NotesIconStyle"
                 app:srcCompat="@drawable/note2" />
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Personal Notes" />
+                style="@style/NotesStyle"
+                android:text="Office Notes" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,20 +59,15 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="match_parent"
-                android:layout_height="350dp"
-                android:layout_weight="1"
+            <ImageView
+                android:id="@+id/imageView5"
+                style="@style/NotesIconStyle"
                 app:srcCompat="@drawable/note3" />
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Personal Notes" />
+                style="@style/NotesStyle"
+                android:text="Public Notes" />
         </LinearLayout>
 
     </LinearLayout>
@@ -100,6 +85,7 @@
             <LinearLayout
                 android:layout_width="214dp"
                 android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright"
                 android:orientation="vertical">
 
 
@@ -107,30 +93,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="105dp"
                     android:layout_margin="5dp"
-                    android:background="@color/colorAccent">
+                    android:background="@android:color/holo_green_light">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="107dp"
-                        android:background="@color/colorAccent"
+                        android:background="@android:color/holo_green_light"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:background="@color/colorAccent"
-                            android:text="Note 1"
-                            android:textStyle="bold" />
+                            style="@style/TitleNotesStyle"
+                            android:background="@android:color/holo_green_light"
+                            android:text="Quote 1" />
 
                         <TextView
                             android:id="@+id/textView5"
-                            android:layout_width="match_parent"
-                            android:layout_height="54dp"
-                            android:layout_margin="5dp"
-                            android:background="@color/colorAccent"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
+                            style="@style/ContentNotesStyle"
+                            android:background="@android:color/holo_green_light"
+                            android:text="Put God at the center of your life, and everything will fall into place." />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -139,29 +120,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="151dp"
                     android:layout_margin="5dp"
-                    android:background="@color/colorAccent2">
+                    android:background="@android:color/holo_red_light">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorAccent2"
+                        android:background="@android:color/holo_red_light"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textView6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:background="@color/colorAccent2"
-                            android:text="Note 1"
-                            android:textStyle="bold" />
+                            style="@style/TitleNotesStyle"
+                            android:background="@android:color/holo_red_light"
+                            android:text="Quote 2" />
 
                         <TextView
                             android:id="@+id/textView7"
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
+                            android:layout_height="104dp"
                             android:layout_margin="5dp"
-                            android:background="@color/colorAccent2"
+                            android:background="@android:color/holo_red_light"
                             android:text="God is good all the time" />
                     </LinearLayout>
 
@@ -172,19 +150,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright"
                 android:orientation="vertical">
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="78dp"
+                    android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:background="@color/colorAccent4">
+                    android:background="@android:color/holo_orange_dark"
+                    app:cardBackgroundColor="@android:color/holo_orange_dark">
 
                     <ImageView
                         android:id="@+id/imageView"
-                        android:layout_width="match_parent"
-                        android:layout_height="75dp"
-                        android:layout_margin="5dp"
+                        android:layout_width="119dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
                         app:srcCompat="@drawable/psj" />
 
                 </android.support.v7.widget.CardView>
@@ -193,13 +174,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:background="@color/colorAccent"
-                    app:cardBackgroundColor="@color/colorAccent3">
+                    android:background="@android:color/holo_purple"
+                    app:cardBackgroundColor="@android:color/holo_purple">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/colorAccent3"
+                        android:background="@android:color/holo_purple"
                         android:orientation="vertical">
 
                         <ImageView
@@ -211,20 +192,13 @@
 
                         <TextView
                             android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:background="@color/colorAccent3"
-                            android:text="Note 1"
-                            android:textStyle="bold" />
+                            style="@style/TitleNotesStyle"
+                            android:text="Park Seo Joon"/>
 
                         <TextView
                             android:id="@+id/textView11"
-                            android:layout_width="match_parent"
-                            android:layout_height="54dp"
-                            android:layout_margin="5dp"
-                            android:background="@color/colorAccent3"
-                            android:text="Park Seo Joon" />
+                            style="@style/ContentNotesStyle"
+                            android:text="Park Seo-joon is a South Korean actor." />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
